@@ -98,6 +98,21 @@ body { /* Cambiamos el color de el fondo de la pagina */
     margin-left: 2.5vw;
 }
 
-.cards:nth-child(2) , .cards:nth-child(6) { /* Se aplican estilos especificos por medio de la pseudoclase */
+.cards--ajuste { /* Se aplican estilos especificos por medio de un modificador*/
+    margin-left: 1vw;
+}
+
+.cards__imagen { /* Se define el tamaño para las imagenes del componente */
+    margin-left: 1vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    height: 35vh;
+    width: auto;
+    display: block;
+}
+
+.cards__enlace {
+    color: #004b69;
+    text-decoration: none;
     margin-left: 1vw;
 }
