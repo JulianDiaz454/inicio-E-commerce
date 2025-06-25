@@ -1,0 +1,103 @@
+* { /* Se resetean los estilos base con el selector universal */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /* Se crea el selector raiz que almacenara las custom properties */
+    --fondo-navegador: #15202b;
+    --color-enlaces: #fff;
+    --fondo-pagina-principal: linear-gradient(to right, #9ae2ff, #f6b6ff, #ffecc4);
+    --color-fondo-cards: white;
+}
+
+body { /* Cambiamos el color de el fondo de la pagina */
+    background-image: var(--fondo-pagina-principal);
+}
+
+.navegador { /* Creamos el componente de  navegación de la pagina */
+    width: 100%;
+    height: 8vh;
+    background-color: var(--fondo-navegador);
+    position: relative;
+    margin-bottom: 15vh;
+}
+
+.navegador__imagen { /* Aplicamos estilos a la imagen del componenete de navegación */
+    height: 5vh;
+    width: auto;
+    margin: 1.5vh 20px;
+    display: inline-block;
+}
+
+.navegador__barra-busqueda { /* Se aplican estilos a el elemento que sera la barra de busqueda de el componenete de navegación */
+    width: 65%;
+    height: 4vh;
+    background-color: white;
+    margin-bottom: 12px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+}
+
+.navegador__buscar { /* Boton de busqueda de la barra de busqueda */
+    height: 100%;
+    width: 4%;
+    position: absolute;
+    background-color: #ffd900;
+    border: none;
+    left: 96%;
+    font-weight: bold;
+}
+
+.navegador__buscar:hover { /* Cambio de estilos para el boton cuando se pase el cursor */
+    background-color: #dfbd00;
+    transition: 0.2s;
+}
+
+.navegador__lista { /* Estilos para la lista del componente */
+    list-style: none;
+    position: absolute;
+    left: 75vw;
+    bottom: 20px;
+}
+
+.navegador__elementos { /* Estilos para los items de la lista */
+    display: inline-block;
+}
+
+.navegador__enlace { /* Estilos para los enlaces de el navegador */
+    text-decoration: none;
+    color: var(--color-enlaces);
+    border-right: 1px var(--color-enlaces) solid;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navegador__enlace:hover { /* Aplicamos estilos al pasar el cursor sobre los enlaces */
+    color: orange;
+    text-decoration: underline;
+}
+
+.titulo-principal { /* Estilos para el titulo principal */
+    color: #15202b;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cards { /* Se crea el component de cards donde se ven los productos */
+    display: inline-block;
+    width: 23vw;
+    height: 60vh;
+    margin: 2.5vh 0.5vw;
+    background-color: var(--color-fondo-cards);
+    padding-top: 2vh;
+}
+
+.cards__titulo {
+    margin-left: 2.5vw;
+}
+
+.cards:nth-child(2) , .cards:nth-child(6) { /* Se aplican estilos especificos por medio de la pseudoclase */
+    margin-left: 1vw;
+}
