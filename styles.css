@@ -94,7 +94,7 @@ body { /* Cambiamos el color de el fondo de la pagina */
     padding-top: 2vh;
 }
 
-.cards__titulo {
+.cards__titulo { /* Se aplica estilos a los titulos de las cards */
     margin-left: 2.5vw;
 }
 
@@ -111,8 +111,50 @@ body { /* Cambiamos el color de el fondo de la pagina */
     display: block;
 }
 
-.cards__enlace {
+.cards__enlace { /* Se aplican estilos a los enlaces de las cards */
     color: #004b69;
     text-decoration: none;
     margin-left: 1vw;
+}
+
+.banner { /* Se crea el componente de banner */
+    width: 100vw;
+    height: 10vh;
+    background-color: #15202b;
+}
+
+.banner__logo { /* Se aplican estilos a el elemento img del banner */
+    margin-top: 2vh;
+    margin-left: 45vw;
+    height: 7.5vh;
+    width: auto;
+}
+
+.pie-pagina { /*Creamos el componente de pie de pagina*/
+    height: 8vh;
+    width: 100vw;
+    background-color: #010b14;
+    padding-top: 1vh;
+    position: relative;
+}
+
+.pie-pagina__lista { /* Se aplican estilos a el elemento lista de el componenete */
+    list-style: none;
+    position: absolute;
+    left: 25vw;
+}
+
+.pie-pagina__elementos { /* Aplicamos estilos a los items de el componente  */
+    display: inline-block;
+}
+
+.pie-pagina__enlace {
+    text-decoration: none;
+    color: var(--color-enlaces);
+    padding-left: 20px;
+}
+
+.pie-pagina__texto {
+    color: #7a7a7a;
+    padding-left: 20px;
 }
